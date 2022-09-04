@@ -9,6 +9,28 @@
     <title>Weather</title>
 </head>
 <body>
-
+    <div class="container">
+        <div class="userInput">
+            <form>
+                <input type="text" id="city" name="city" placeholder="Toronto">
+                <input type="submit" id="submit">
+            </form>
+        </div>
+        <div class="weatherBox">
+            <div class="top">
+                <div id="location"></div>
+                <div id="temperature"></div>
+                <div id="feels"></div>
+                <div id="sunset"></div>
+                <div id="sunrise"></div>
+            </div>
+            <div class="info">
+                <div id="description"></div>
+                <div id="humidity"></div>
+                <div id="wind"></div>
+            </div>
+            <img id="image" src="" alt="weather-icon">
+        </div>
+    </div>
 </body>
 </html>
