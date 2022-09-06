@@ -27,7 +27,7 @@ const weatherImage = (weather) => {
             iconName += ' night';
         }
     }
-    imageSlot.src = `../dist/weather-icons/${iconName}.svg`;
+    imageSlot.src = `./weather-icons/${iconName}.svg`;
 }
 
 const updateTime = () => {

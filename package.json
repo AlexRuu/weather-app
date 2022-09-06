@@ -5,7 +5,9 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "deploy": "gh-pages -d dist"
+
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,7 @@
   },
   "dependencies": {
     "date-fns": "^2.29.2",
+    "gh-pages": "^4.0.0",
     "webpack": "^5.74.0",
     "webpack-dev-server": "^4.10.1"
   }
