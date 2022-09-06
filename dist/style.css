@@ -29,6 +29,7 @@
     position: relative;
     width: 15rem;
     left: 4rem;
+    padding-top: 10px;
 }
 
 .updatedTime {
