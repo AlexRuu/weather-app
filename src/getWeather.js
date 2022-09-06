@@ -13,8 +13,8 @@ async function getWeather(city) {
         description: data.weather[0].description,
         humidity: `${data.main.humidity} %`,
         wind: `${Math.round((data.wind.speed * 3600) / 1000)} km/h`,
-        sunset: format(fromUnixTime(data.sys.sunset), 'pp'),
-        sunrise: format(fromUnixTime(data.sys.sunrise), 'pp')
+        sunset: format(fromUnixTime(data.sys.sunset), 'p'),
+        sunrise: format(fromUnixTime(data.sys.sunrise), 'p')
     }
     return weatherData;
 };
