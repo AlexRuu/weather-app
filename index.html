@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Weather</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="userInput">
+                <form class="search">
+                    <input type="text" name="city" id="city" name="city" placeholder="Search...">
+                    <input type="submit" id="submit">
+                </form>
+            </div>
+            <div class="weatherBox">
+                <div class="loader"></div>
+                <div class="top">
+                    <div id="location"></div>
+                    <div id="temperature"></div>
+                    <div id="feels"></div>
+                    <div class="sun">
+                        <div class="sunrise">
+                            <img id="sunriseIcon" class="icons" src="./weather-icons/sunrise.svg" alt="Sunrise-Icon">
+                            <div id="sunrise"></div>
+                        </div>
+                        <div class="sunset">
+                            <img id="sunriseIcon" class="icons" src="./weather-icons/sunset.svg" alt="Sunset-Icon">
+                            <div id="sunset"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="info">
+                        <div id="iconClass" style="display: none"></div>
+                        <div id="description"></div>
+                        <div class="humidity">
+                            <img id="humidityIcon" class="icons" src="./weather-icons/humidity.svg" alt="Humidity-Icon">
+                            <div id="humidity"></div>
+                        </div>
+                        <div class="wind">
+                            <img id="windIcon" class="icons" src="./weather-icons/wind.svg" alt="Wind-Icon">
+                            <div id="wind"></div>
+                        </div>
+                    </div>
+                    <img id="image" src="" alt="weather-icon">
+                </div>
+                <div class="updatedTime"></div>
+            </div>
+        </div>
+        <script type="text/javascript" src="bundle.js"></script>
+    </body>
+
+</html>
