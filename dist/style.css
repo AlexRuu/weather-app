@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Noto+Sans+KR&display=swap');
+
+* {
+    font-family: 'Merriweather Sans', sans-serif;
+    background-color: #89CFF0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.weatherBox {
+    border-radius: 10px;
+    border: solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 30rem;
+    margin: 50px;
+    padding: 20px;
+}
+
+#image {
+    position: relative;
+    width: 15rem;
+    left: 4rem;
+}
+
+.updatedTime {
+    margin-left: auto;
+
+    margin-bottom: -20px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+}
+
+.icons {
+    width: 40px;
+}
+
+.wind,
+.humidity,
+.sunrise,
+.sunset,
+.sun {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sunset,
+.sunrise {
+    padding: 0px 30px 20px 30px;
+    z-index: 1;
+}
+
+#description {
+    padding-left: 30px;
+}
+
+#temperature {
+    font-size: 3.5rem;
+}
+
+#location {
+    font-size: 1.5rem;
+}
+
+#feels {
+    padding-bottom: 20px;
+}
+
+.loader {
+    position: relative;
+    left: 35%;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+form {
+    margin-top: 30px;
+    position: relative;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+#city {
+    width: 400px;
+    margin-bottom: 0px;
+    padding: 25px 30px;
+    border-radius: 50px;
+    background-color: #fff;
+    border-style: hidden;
+}
+
+#city:focus {
+    outline: none;
+}
+
+#submit {
+    position: absolute;
+    left: auto;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    padding-right: 21px;
+    padding-left: 21px;
+    border-radius: 50px;
+    background-color: #fff3de;
+    color: #000;
+    border: 0px;
+    border-style: hidden;
+    cursor: pointer;
+}
